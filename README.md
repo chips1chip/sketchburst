@@ -48,3 +48,55 @@ SketchBurst/
 ├── package.json
 ├── pnpm-lock.yaml
 └── pnpm-workspace.yaml
+
+🚀 Getting Started
+Prerequisites
+
+Make sure you have installed:
+
+Node.js
+pnpm
+1. Clone the repository
+git clone https://github.com/YOUR_USERNAME/SketchBurst.git
+cd SketchBurst
+2. Install dependencies
+pnpm install
+3. Start the backend
+pnpm --filter backend dev
+
+The backend runs on:
+
+http://localhost:3000
+4. Start the frontend
+
+Open another terminal:
+
+pnpm --filter frontend dev
+
+The frontend runs on:
+
+http://localhost:5173
+🎮 How to Play
+Create a room.
+Share the room code with your friends.
+Players join the room.
+The host starts the game.
+One player receives a secret word and draws it.
+Other players try to guess the word.
+Players earn points for correct guesses.
+Turns rotate between players.
+The player with the highest score wins.
+🔮 Future Improvements
+User accounts and authentication
+Persistent player statistics
+Custom word lists
+More drawing tools
+Game history
+Spectator mode
+Improved moderation and anti-cheat features
+Production database integration
+👩‍💻 Author
+
+Developed as a multiplayer web application project.
+
+⭐ If you like SketchBurst, consider giving the repository a star!
