@@ -1,0 +1,18 @@
+{
+  "name": "sketchburst",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.10.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "turbo": "^2.10.8",
+    "typescript": "^5.9.3"
+  }
+}
