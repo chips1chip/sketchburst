@@ -11,7 +11,8 @@ const app = express();
 const httpServer = http.createServer(app);
 
 const port = Number(process.env.PORT ?? 3000);
-const frontendUrl = process.env.FRONTEND_URL ?? "http://localhost:5173";
+const frontendUrl =
+  process.env.FRONTEND_URL ?? "http://localhost:5173";
 
 app.use(
   cors({
@@ -55,6 +56,8 @@ io.on("connection", (socket) => {
   });
 });
 
-httpServer.listen(port, () => {
-  console.log(`SketchBurst backend running on http://localhost:${port}`);
+httpServer.listen(port, "0.0.0.0", () => {
+  console.log(
+    `SketchBurst backend running on port ${port}`,
+  );
 });
