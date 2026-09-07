@@ -87,9 +87,12 @@ type RoundBegunData = {
   wordLength: number;
 };
 
-const socket: Socket = io("http://localhost:3000", {
-  autoConnect: true,
-});
+const socket = io(
+  import.meta.env.VITE_BACKEND_URL ?? "http://localhost:3000",
+  {
+    autoConnect: true,
+  },
+);
 
 const COLORS = [
   "#1f2937",
